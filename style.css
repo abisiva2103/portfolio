@@ -1,0 +1,127 @@
+*{
+    box-sizing: border border-box;
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+    background: rgb(48, 130, 163);
+}
+/* -------------------- */
+/*     BASIC RESET      */
+/* -------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+:root {
+    /* COLORS */
+    --clr-dark: 230 35% 7%;
+    --clr-accent: 231 77% 90%;
+    --clr-white: 0 0% 100%;
+    --gap: 3rem;
+  
+    /* FONT SIZES */
+    --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+    --fs-800: 3.5rem;
+    --fs-700: 1.5rem;
+    --fs-600: 1rem;
+    --fs-500: 1rem;
+    --fs-400: 0.9375rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+  
+    /* FONT-FAMILIES */
+    --ff-serif: "Bellefair", serif;
+    --ff-sans-cond: "Barlow Condensed", sans-serif;
+    --ff-sans-normal: "Barlow", sans-serif;
+  }
+  
+  /* Global Reset */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  /* Margin Reset */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  picture {
+    margin: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    font-weight: 400;
+  }
+  
+  body {
+    font-family: var(--ff-sans-normal);
+    font-size: var(--fs-400);
+    background-color: hsl(var(--clr-dark));
+    color: hsl(var(--clr-accent));
+    min-height: 100vh;
+    line-height: 1.6;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    overflow-x: hidden;
+  }
+  
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  input,
+  button,
+  textarea,
+  select {
+    font-family: inherit;
+  }
+.flex{
+    display: flex;
+}
+  
+nav.flex {
+    justify-content: space-between;
+}
+  
+nav{
+    margin-top: 2rem;
+    margin-right: 3rem ;
+}
+
+.navigation.flex{
+    justify-content: space-evenly;
+    gap: 3rem;
+    padding-left: 2rem;
+}
+.navigation{
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.heroimage{
+    width: 200px;
+    height: 200px;
+}
+.herimg > img{
+   height: 20px;
+   width: 20px;
+   object-fit: cover;
+   transform: scale(1);
+   justify-self: center;
+}
